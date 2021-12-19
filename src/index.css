@@ -19,3 +19,17 @@ a:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.349);
 }
+h1 {
+  font-size: 50;
+  color: #00a5b9;
+  font-family: serif;
+  text-align: center;
+}
+h2 {
+  font-family: serif;
+}
+p {
+  font-family: serif;
+  text-align: justify;
+  font-size: larger;
+}

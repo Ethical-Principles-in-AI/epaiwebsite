@@ -1,35 +1,47 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../images/epai_logo.png"
 
 function Navigation() {
   return (
-    <div className="navigation">
+    <div className="navigation fixed-top">
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            React Multi-Page Website
+            <img alt="EPAI logo" style={{"width": "55px"}} src={logo}/>
+            &nbsp; UofT EPAI
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/">
+                <NavLink style={{"white-space": 'nowrap'}} className="nav-link" to="/">
                   Home
                   <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about">
-                  About
+                <NavLink style={{"white-space": 'nowrap'}} className="nav-link" to="/about">
+                  About Us
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
-                  Contact
+                <NavLink style={{"white-space": 'nowrap'}} className="nav-link" to="/events">
+                  Events
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/blog">
-                  Blog
+                <NavLink style={{"white-space": 'nowrap'}} className="nav-link" to="/projects">
+                  Projects
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink style={{"white-space": 'nowrap'}} className="nav-link" to="/news">
+                  Newsletter
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink style={{"white-space": 'nowrap'}} className="nav-link" to="/joinus">
+                  Join Us
                 </NavLink>
               </li>
             </ul>
